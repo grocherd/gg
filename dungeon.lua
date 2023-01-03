@@ -50,14 +50,14 @@ local mod = main:Button("TP HOST", function()
 	getgenv().farmer = true
 while wait(0.1) do
     if getgenv().farmer == true then 
-smoothTeleport(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").AcceleratorMOB.HumanoidRootPart.Position - Vector3.new(0,-1,0), 200)
+smoothTeleport(game.Players.LocalPlayer.Character.HumanoidRootPart, game:GetService("Workspace").AcceleratorMOB.HumanoidRootPart.Position - Vector3.new(0,-1,0), 500)
     end
 end
 end)
 local mod = main:Button("START", function()
-smoothTeleport(game.Players.LocalPlayer.Character.HumanoidRootPart, Vector3.new(59.55501937866211, 13.528316497802734, 81.37574768066406), 100)
-wait(1)
-smoothTeleport(game.Players.LocalPlayer.Character.HumanoidRootPart, Vector3.new(-64.27962493896484, 5.777738571166992, 217.48968505859375), 100)
+smoothTeleport(game.Players.LocalPlayer.Character.HumanoidRootPart, Vector3.new(59.55501937866211, 13.528316497802734, 81.37574768066406), 250)
+wait(2)
+smoothTeleport(game.Players.LocalPlayer.Character.HumanoidRootPart, Vector3.new(-64.27962493896484, 5.777738571166992, 217.48968505859375), 250)
 end)
 local mod = main:Button("TP MOB", function()
 	getgenv().farmer = true
